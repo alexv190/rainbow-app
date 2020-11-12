@@ -1,1 +1,20 @@
-Simple Angular app
+<style>
+table, td {
+    border: 1px solid black;
+}
+tr.collapse {
+    visibility: collapse;
+}
+</style>
+<table>
+    <tbody >
+            <tr [class]="rowClass" style="{{red}}">(255,000,000)</tr>
+            <tr [class]="rowClass" style="{{orange}}">(255, 128, 0)</tr>
+            <tr [class]="rowClass" style="{{yellow}}">(255,255,000)</tr>
+            <tr [class]="rowClass" [style]="green">(000,255,000)</tr>
+            <tr [class]="rowClass" [style]="teal">(000,255,255)</tr>
+            <tr [class]="rowClass" [style]="blue">(000,000,255)</tr>
+            <tr [class]="rowClass" [style]="purple">(128,000,128)</tr>
+    </tbody>
+</table>
+<button (click)="hideTable()">Hide table</button>
